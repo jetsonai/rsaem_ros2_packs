@@ -44,11 +44,13 @@ ros2 run rsaem_teleop teleop_keyboard
 
 ### 종이컵 위에서 바퀴가 움직이는지 확인해주세요
 
-ros topic list (다른 창)
+### 로컬에서 로봇 토픽과 연결 관계 확인 (다른 참)
+
+ros topic list
 
 rqt_graph
 
-### rviz2 확인 (다른 참)
+### 로컬에서 rviz2 확인 (다른 참)
 
 ros2 launch rsaem_bringup rviz2_rsaem.launch.py
 
@@ -112,11 +114,13 @@ ros2 launch rsaem_bringup rsaem.launch.py
 
 ### 터미널에 에러가 없는지 확인해주세요
 
+### 원격에서 로봇 토픽과 연결 관계 확인 (다른 참)
+
 ros topic list (다른 창)
 
 rqt_graph
 
-### rviz2 확인 (다른 참)
+### 원격 rviz2 확인 (다른 참)
 
 ros2 launch rsaem_bringup rviz2_rsaem.launch.py
 
@@ -138,7 +142,7 @@ ros2 launch rsaem_bringup rsaem.launch.py
 
 ros2 run rsaem_teleop teleop_keyboard
 
-### 동작 여부를 확인 한 후 케이블을 뽑고 바닥에서 동작을 확인해주세요
+### 동작 여부를 확인 한 후 케이블을 뽑고 바닥에서 젼진 후진 좌회전 우회전 등 동작을 확인해주세요
 
 * 모든 창을 닫아주세요
 
