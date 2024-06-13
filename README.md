@@ -88,7 +88,7 @@ ssh nvidia@{MY_RSAEM BOT} 예 ) ssh nvidia@192.168.100.99
  
 ros2 launch rsaem_bringup rsaem.launch.py
 
-# teleop (다른 창)
+### teleop (다른 창)
 
 ros2 run rsaem_teleop teleop_keyboard
 
