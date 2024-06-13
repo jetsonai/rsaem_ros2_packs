@@ -26,7 +26,7 @@ source ~/.bashrc
 
 --------------------------------------
 
-## 1-2 LAUNCH
+## 1-2 Robot Teleop (Local)
 
 ### rsaembot_launch
 
@@ -44,17 +44,24 @@ ros2 run rsaem_teleop teleop_keyboard
 
 ros2 launch rsaem_bringup rviz2_rsaem.launch.py
 
+=====================================================
+
+=====================================================
+
+# 2. rsaem_ros_packs for PC
+
 ===========================================
 
 ### 로봇의 IP를 확인해주세요.
 
 ifconfig
 
-=====================================================
-
-# 2. rsaem_ros_packs for PC
+---------------------
 
 ### 주의) 이제 PC 에서만 명령을 내리게 됩니다.
+
+======================
+
 
 ## 2-1 PC 환경 세팅
 
@@ -92,15 +99,17 @@ ssh nvidia@{MY_RSAEM BOT} 예 ) ssh nvidia@192.168.100.99
 
 ros2 launch rsaem_bringup rsaem.launch.py
 
-### teleop (다른 창)
+### 터미널에 에러가 없는지 확인해주세요
 
-ros2 run rsaem_teleop teleop_keyboard
+### rviz2 확인 (다른 참)
 
-### 동작을 확인해주세요
+ros2 launch rsaem_bringup rviz2_rsaem.launch.py
 
+* 모든 창을 닫아주세요
+  
 ============================================
 
-## 2-4 원격 제어
+## 2-4 BRINGUP & 원격 제어
 
 ### brigup (원격 접속)
 
@@ -111,6 +120,8 @@ ros2 launch rsaem_bringup rsaem.launch.py
 ### teleop (다른 창)
 
 ros2 run rsaem_teleop teleop_keyboard
+
+### 동작 여부를 확인 한 후 케이블을 뽑고 바닥에서 동작을 확인해주세요
 
 * 모든 창을 닫아주세요
 
