@@ -26,6 +26,12 @@ colcon build --packages-select rsaem_description
 
 colcon build --packages-select rsaem_bringup
 
+OR 
+
+다 같이 빌드하기 위해서
+
+colcon build
+
 --------------------------------------
 
 ros2 launch rsaem_node rsaembot_launch.py
