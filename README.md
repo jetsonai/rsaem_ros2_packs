@@ -8,9 +8,9 @@ ros2 run sensor_test_pack lidar_sub_node
 
 =====================================================
 
-# rsaem_ros_packs for ROBOT
+# 1. rsaem_ros_packs for ROBOT
 
-### 빌드 (소스 전달 후)
+### 1-1 빌드 (소스 전달 후)
 
 cd rsaem_ws
 
@@ -18,7 +18,7 @@ colcon build
 
 --------------------------------------
 
-## LAUNCH
+## 1-2 LAUNCH
 
 ### rsaembot_launch
 
@@ -38,15 +38,17 @@ ros2 launch rsaem_bringup rviz2_rsaem.launch.py
 
 ===========================================
 
+### 로봇의 IP를 확인해주세요.
+
+ifconfig
+
 =====================================================
 
-# rsaem_ros_packs for PC
+# 2. rsaem_ros_packs for PC
 
 ### 주의) 이제 PC 에서만 명령을 내리게 됩니다.
 
-### IP 확인
-
-ifconfig
+## 2-1 PC 환경 세팅
 
 ### bashrc 수정
 
@@ -54,7 +56,7 @@ ROS_DOMAIN_ID 를 로봇에 세팅해주신 본인 ID 로 수정해주세요
 
 ===========================================
 
-## 빌드 (소스 전달 후)
+## 2-2 PC 빌드 (소스 전달 후)
 
 cd rsaem_ws
 
@@ -62,7 +64,11 @@ colcon build
 
 ==================================
 
-## BRINGUP R-SAEM BOT
+## 2-3 BRINGUP R-SAEM BOT
+
+### brigup (원격 접속)
+
+ssh nvidia@{MY_RSAEM BOT} 예 ) ssh nvidia@192.168.100.99
 
 ros2 launch rsaem_bringup rsaem.launch.py
 
@@ -70,13 +76,15 @@ ros2 launch rsaem_bringup rsaem.launch.py
 
 ros2 run rsaem_teleop teleop_keyboard
 
+### 동작을 확인해주세요
+
 ============================================
 
-## 원격 제어
+## 2-4 원격 제어
 
-### 원격 bringup
+### brigup (원격 접속)
 
-ssh ubuntu@{MY_RSAEM BOT}
+ssh nvidia@{MY_RSAEM BOT} 예 ) ssh nvidia@192.168.100.99
  
 ros2 launch rsaem_bringup rsaem.launch.py
 
@@ -88,13 +96,13 @@ ros2 run rsaem_teleop teleop_keyboard
 
 ============================================
 
-## SLAM 실습
+## 2-5 SLAM 실습
 
 ### 팬스를 설치해주세요. 로봇 시작 위치와 방향을 기억해주세요.
 
-## 원격 bringup
+### brigup (원격 접속)
 
-ssh ubuntu@{MY_RSAEM BOT}
+ssh nvidia@{MY_RSAEM BOT} 예 ) ssh nvidia@192.168.100.99
  
 ros2 launch rsaem_bringup rsaem.launch.py
 
@@ -116,13 +124,13 @@ ros2 run nav2_map_server map_saver_cli -f ~/map
 
 ============================================
 
-## Navi2 실습
+## 2-6 Navi2 실습
 
 ### SLAM 때 사용한 처음 위치와 방향에 위치시켜주세요.
 
-### 원격 bringup
+### brigup (원격 접속)
 
-ssh ubuntu@{MY_RSAEM BOT}
+ssh nvidia@{MY_RSAEM BOT} 예 ) ssh nvidia@192.168.100.99
 
 ros2 launch rsaem_bringup rsaem.launch.py
 
@@ -131,3 +139,4 @@ ros2 launch rsaem_bringup rsaem.launch.py
 ros2 launch rsaem_navigation2 navigation2.launch.py map:=$HOME/map.yaml
 
 ========================================
+
