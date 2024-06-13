@@ -68,6 +68,8 @@ ros2 launch rsaem_bringup rviz2_rsaem.launch.py
 
 ifconfig
 
+### 원격 테스트를 위해 로봇의 터미널창을 모두 닫아주십시오 (필수)
+
 ---------------------
 
 ### 주의) 이제 PC 에서만 명령을 내리게 됩니다.
