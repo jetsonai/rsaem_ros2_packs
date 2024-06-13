@@ -36,13 +36,17 @@ export LIDAR_MODEL=LDS-01
 
 ros2 launch rsaem_node rsaembot_launch.py
 
-### teleop (다른 창)
+### teleop (다른 창) (종이컵 이용 필수)
 
 ros2 run rsaem_teleop teleop_keyboard
+
+### 종이컵 위에서 바퀴가 움직이는지 확인해주세요
 
 ### rviz2 확인 (다른 참)
 
 ros2 launch rsaem_bringup rviz2_rsaem.launch.py
+
+### rviz 상의 노드들과 TF 들을 확인해주세요
 
 =====================================================
 
@@ -61,7 +65,6 @@ ifconfig
 ### 주의) 이제 PC 에서만 명령을 내리게 됩니다.
 
 ======================
-
 
 ## 2-1 PC 환경 세팅
 
@@ -100,6 +103,10 @@ ssh nvidia@{MY_RSAEM BOT} 예 ) ssh nvidia@192.168.100.99
 ros2 launch rsaem_bringup rsaem.launch.py
 
 ### 터미널에 에러가 없는지 확인해주세요
+
+### ros topic list (다른 창)
+
+### rqt_graph
 
 ### rviz2 확인 (다른 참)
 
