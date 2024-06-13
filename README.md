@@ -8,6 +8,8 @@ ros2 run sensor_test_pack lidar_sub_node
 
 =====================================================
 
+# SLAM Navigation 실습
+
 # 1. rsaem_ros_packs for ROBOT
 
 ### 1-1 빌드 (소스 전달 후)
