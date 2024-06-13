@@ -22,6 +22,8 @@ colcon build
 
 echo "source ~/rsaem_ws/install/setup.bash" >> ~/.bashrc
 
+echo "export LIDAR_MODEL=LDS-01" >> ~/.bashrc
+
 source ~/.bashrc
 
 --------------------------------------
@@ -89,6 +91,8 @@ colcon build
 ### bashrc 에 rsaem_ws setup.bash 실행 추가
 
 echo "source ~/rsaem_ws/install/setup.bash" >> ~/.bashrc
+
+echo "export LIDAR_MODEL=LDS-01" >> ~/.bashrc
 
 source ~/.bashrc
 
