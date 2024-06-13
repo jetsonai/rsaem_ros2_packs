@@ -36,13 +36,23 @@ export LIDAR_MODEL=LDS-01
 
 (export LIDAR_MODEL 은 bashrc 에 있기 때문에 입력하지 않아도 됩니다)
 
-ros2 launch rsaem_node rsaembot_launch.py
+ros2 launch rsaem_bringup rsaem.launch.py
 
 ### teleop (다른 창) (종이컵 이용 필수)
 
 ros2 run rsaem_teleop teleop_keyboard
 
 ### 종이컵 위에서 바퀴가 움직이는지 확인해주세요
+
+### ros topic list (다른 창)
+
+### rqt_graph
+
+### rviz2 확인 (다른 참)
+
+ros2 launch rsaem_bringup rviz2_rsaem.launch.py
+
+### rviz 상의 노드들과 TF 들을 확인해주세요
 
 =====================================================
 
@@ -109,6 +119,8 @@ ros2 launch rsaem_bringup rsaem.launch.py
 ### rviz2 확인 (다른 참)
 
 ros2 launch rsaem_bringup rviz2_rsaem.launch.py
+
+### rviz 상의 노드들과 TF 들을 확인해주세요
 
 * 모든 창을 닫아주세요
   
