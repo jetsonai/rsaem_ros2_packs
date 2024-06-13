@@ -44,9 +44,9 @@ ros2 run rsaem_teleop teleop_keyboard
 
 ### 종이컵 위에서 바퀴가 움직이는지 확인해주세요
 
-### ros topic list (다른 창)
+ros topic list (다른 창)
 
-### rqt_graph
+rqt_graph
 
 ### rviz2 확인 (다른 참)
 
@@ -112,9 +112,9 @@ ros2 launch rsaem_bringup rsaem.launch.py
 
 ### 터미널에 에러가 없는지 확인해주세요
 
-### ros topic list (다른 창)
+ros topic list (다른 창)
 
-### rqt_graph
+rqt_graph
 
 ### rviz2 확인 (다른 참)
 
