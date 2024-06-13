@@ -18,6 +18,10 @@ cd rsaem_ws
 
 colcon build
 
+### bashrc 에 rsaem_ws setup.bash 실행 추가
+
+echo "source ~/rsaem_ws/install/setup.bash" >> ~/.bashrc
+
 --------------------------------------
 
 ## 1-2 LAUNCH
@@ -63,6 +67,10 @@ ROS_DOMAIN_ID 를 로봇에 세팅해주신 본인 ID 로 수정해주세요
 cd rsaem_ws
 
 colcon build
+
+### bashrc 에 rsaem_ws setup.bash 실행 추가
+
+echo "source ~/rsaem_ws/install/setup.bash" >> ~/.bashrc
 
 ==================================
 
