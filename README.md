@@ -9,6 +9,8 @@ ros2 run sensor_test_pack lidar_sub_node
 
 # rsaem_ros_packs
 
+# 빌드
+
 cd rsaem_ws
 
 colcon build
@@ -33,15 +35,19 @@ colcon build --packages-select rsaem_navigation2
 
 --------------------------------------
 
+# rsaembot_launch
+
+export LIDAR_MODEL=LDS-01
+
 ros2 launch rsaem_node rsaembot_launch.py
 
+------------------------------
+
 ros2 run rsaem_teleop teleop_keyboard
----------------------
 
 export LIDAR_MODEL=LDS-01
 
 ros2 launch rsaem_bringup rsaem.launch.py
-
 
 ros2 launch rsaem_bringup rviz2_rsaem.launch.py
 
