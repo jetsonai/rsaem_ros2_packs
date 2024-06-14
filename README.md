@@ -90,7 +90,9 @@ gedit .bashrc
 
 ===========================================
 
-## 2-2 PC 빌드 (소스 전달 후)
+scp -r nvidia@192.168.100.113:/home/nvidia/Downloads/rsaem_ws .
+
+## 2-2 PC 빌드 (소스 복사 후)
 
 cd rsaem_ws
 
