@@ -92,6 +92,10 @@ gedit .bashrc
 
 scp -r nvidia@192.168.100.113:/home/nvidia/Downloads/rsaem_ws .
 
+인증키 질문에 yes 라고 입력해주세요
+
+비밀번호 에는 nvidia 라고 입력해주세요 (입력 시 글자가 안 보입니다.)
+
 ## 2-2 PC 빌드 (소스 복사 후)
 
 cd rsaem_ws
