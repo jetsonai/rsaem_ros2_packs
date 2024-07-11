@@ -46,7 +46,7 @@ ros2 run rsaem_teleop teleop_keyboard
 
 ### 로컬에서 로봇 토픽과 연결 관계 확인 (다른 참)
 
-ros topic list
+ros2 topic list
 
 rqt_graph
 
@@ -124,7 +124,7 @@ ros2 launch rsaem_bringup rsaem.launch.py
 
 ### 원격에서 로봇 토픽과 연결 관계 확인 (다른 참)
 
-ros topic list
+ros2 topic list
 
 rqt_graph
 
