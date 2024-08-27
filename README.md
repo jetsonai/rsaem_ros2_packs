@@ -1,10 +1,10 @@
-# sensor_test_pack
+# RSaem ROS2 Packages
 
-ros2 launch hls_lfcd_lds_driver hlds_laser.launch.py
+## vBox 이미지
 
-colcon build --packages-select sensor_test_pack
+https://drive.google.com/file/d/1I4tgWstkjQJZV55ytqdymDNAUI3euq31/view?usp=drive_link
 
-ros2 run sensor_test_pack lidar_sub_node 
+전달 ws 빌드 및 ROS ID 설정 후 사용
 
 =====================================================
 
