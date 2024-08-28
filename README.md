@@ -6,19 +6,10 @@ https://drive.google.com/file/d/1I4tgWstkjQJZV55ytqdymDNAUI3euq31/view?usp=drive
 
 ### vbox 이미지 cpu core 와 RAM 설정 필수
 
-### 로봇과 같은 네트워크 wifi 설정
+### 로봇과 vBox 를 같은 wifi 네트워크로 설정
 
 ## 테스트 준비
 
-### rsaem_ws 소스 다운로드, ws 빌드 
-
-cd ~/rsaem_ws/
-
-colcon build --packages-select rsaem_msgctl
-
-source ./install/setup.bash 
-
-colcon build
 
 ### ROS ID 설정 후 사용
 
@@ -28,17 +19,29 @@ colcon build
 
 # 1. rsaem_ros_packs for ROBOT
 
-### 1-1 빌드 (소스 전달 후)
+## 1-1 소스 다운로드, ws 빌드 
 
-cd rsaem_ws
+cd ~/rsaem_ws/
+
+colcon build --packages-select rsaem_msgctl
+
+source ./install/setup.bash 
 
 colcon build
 
-### bashrc 에 rsaem_ws setup.bash 실행 추가 (한번만)
+### bashrc 세팅 (한번만)
 
-echo "source ~/rsaem_ws/install/setup.bash" >> ~/.bashrc
+gedit ~/.bashrc
 
-echo "export LIDAR_MODEL=LDS-01" >> ~/.bashrc
+---------------------------
+
+export ROS_DOMAIN_ID=90
+
+export LIDAR_MODEL=LDS-01
+
+source /home/nvidia/rsaem_ws/install/setup.bash
+
+----------------------------
 
 source ~/.bashrc
 
@@ -47,10 +50,6 @@ source ~/.bashrc
 ## 1-2 Robot Teleop (Local)
 
 ### rsaembot_launch
-
-export LIDAR_MODEL=LDS-01
-
-(export LIDAR_MODEL 은 bashrc 에 있기 때문에 입력하지 않아도 됩니다)
 
 ros2 launch rsaem_bringup rsaem.launch.py
 
