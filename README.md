@@ -95,27 +95,32 @@ ifconfig
 
 ### bashrc 수정 (한번만)
 
-ROS_DOMAIN_ID 를 로봇에 세팅해주신 본인 ID 로 수정해주세요
+소스 다운로드, ws 빌드 
 
-cd
+cd ~/rsaem_ws/
 
-gedit .bashrc
+colcon build --packages-select rsaem_msgctl
 
-수정(export ROS_DOMAIN_ID=30) -> 저장 -> 창 끄기
-
-===========================================
-
-scp -r nvidia@192.168.100.113:/home/nvidia/Downloads/rsaem_ws .
-
-인증키 질문에 yes 라고 입력해주세요
-
-비밀번호 에는 nvidia 라고 입력해주세요 (입력 시 글자가 안 보입니다.)
-
-## 2-2 PC 빌드 (소스 복사 후)
-
-cd rsaem_ws
+source ./install/setup.bash 
 
 colcon build
+
+### bashrc 세팅 (한번만)
+
+gedit ~/.bashrc
+
+#### 활성화 폴더 와 ROS_DOMAIN_ID 를 주의해서 세팅해주세요
+---------------------------
+
+export ROS_DOMAIN_ID=90
+
+export LIDAR_MODEL=LDS-01
+
+source /home/nvidia/rsaem_ws/install/setup.bash
+
+----------------------------
+
+source ~/.bashrc
 
 ### bashrc 에 rsaem_ws setup.bash 실행 추가 (한번만)
 
