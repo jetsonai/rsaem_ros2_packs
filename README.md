@@ -4,7 +4,15 @@
 
 https://drive.google.com/file/d/1I4tgWstkjQJZV55ytqdymDNAUI3euq31/view?usp=drive_link
 
-전달 ws 빌드 및 ROS ID 설정 후 사용
+vbox 이미지 cpu core 와 RAM 설정 필수
+
+로봇과 같은 네트워크 wifi 설정
+
+## 테스트 준비
+
+rsaem_ws 소스 다운로드, ws 빌드 
+
+ROS ID 설정 후 사용
 
 =====================================================
 
