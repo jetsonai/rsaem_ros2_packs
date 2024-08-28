@@ -13,8 +13,11 @@ https://drive.google.com/file/d/1I4tgWstkjQJZV55ytqdymDNAUI3euq31/view?usp=drive
 ### rsaem_ws 소스 다운로드, ws 빌드 
 
 cd ~/rsaem_ws/
+
 colcon build --packages-select rsaem_msgctl
+
 source ./install/setup.bash 
+
 colcon build
 
 ### ROS ID 설정 후 사용
