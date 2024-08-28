@@ -33,6 +33,7 @@ colcon build
 
 gedit ~/.bashrc
 
+#### 활성화 폴더 와 ROS_DOMAIN_ID 를 주의해서 세팅해주세요
 ---------------------------
 
 export ROS_DOMAIN_ID=90
