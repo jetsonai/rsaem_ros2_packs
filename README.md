@@ -6,7 +6,11 @@ https://drive.google.com/file/d/1I4tgWstkjQJZV55ytqdymDNAUI3euq31/view?usp=drive
 
 ### vbox 이미지 cpu core 와 RAM 설정 필수
 
+PC 사양에 맞추어 최대로 설정해주세요.
+
 ### 로봇과 vBox 를 같은 wifi 네트워크로 설정
+
+같은 무선 라우터에 연결해주세요.
 
 ## 테스트 준비
 
