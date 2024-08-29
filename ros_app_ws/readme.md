@@ -6,7 +6,7 @@ ros2 run ros_yolo_pack ros_yolo_node
 
 # 발행자 노드
 
-ros2 run ros_yolo_pack ros_yolo_teset_pub
+ros2 run ros_yolo_pack ros_yolo_test_pub
 
 ## 구독자 노드에 다음 함수를 포함하여 DetTopicSubscriber Class 를 구현하세요.
 
