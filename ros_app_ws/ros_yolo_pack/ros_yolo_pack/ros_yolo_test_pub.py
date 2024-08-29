@@ -89,7 +89,7 @@ def image_detection2(frame, network, class_names, class_colors, thresh):
         detections_adjusted.append((str(label), confidence, bbox_adjusted))
         detMsg.label = 'none'
         if(label == 'person'):
-            cx, cy, bw, bh = bbox_converted
+            cx, cy, bw, bh = bbox_adjusted
             detMsg.label = 'person'
             detMsg.center_x = cx
             detMsg.center_y = cy
