@@ -6,14 +6,11 @@
 import rclpy
 from rclpy.node import Node
 from rclpy.qos import QoSProfile
-#TODO
-
-#TODO
 from det_msgpack.msg import DetInfo
 
 class DetTopicSubscriber(Node):
 
-def __init__(self):
+    def __init__(self):
         super().__init__('ros_yolo_test_sub')
         qos_profile = QoSProfile(depth=10)
         self.basicsrv_subscriber = self.create_subscription(
@@ -23,8 +20,7 @@ def __init__(self):
 
     def subscribe_detinfo(self, msg):
         self.get_logger().info(" label:{} cx:{} cy:{} bw:{} bh:{}".format(msg.label,
-                msg.center_x, msg.center_y, msg.b_width, msg.b_height))
-
+                msg.center_x, msg.center_y, msg.b_width, msg.b_height)) 
 
 def main(args=None):
     rclpy.init(args=args)
