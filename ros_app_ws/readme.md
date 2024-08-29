@@ -16,5 +16,5 @@ ros2 run ros_yolo_pack ros_yolo_test_pub
 
 colcon build --packages-select ros_yolo_pack
 
-ros2 run ros_yolo_pack ros_yolo_teset_sub
+ros2 run ros_yolo_pack ros_yolo_test_sub
 
