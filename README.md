@@ -43,7 +43,7 @@ rviz 상의 노드들과 TF 들을 확인해주세요
 
 다운로드 받아서 압축을 풀어주세요
 
-https://drive.google.com/file/d/198EhlmS0NeUgq0NHCpdXkJo6aTuB2b4W/view?usp=sharing
+https://drive.google.com/file/d/1e4yvVd-scFeE826-GFRSDLwCAggTMlA4/view?usp=sharing
 
 
 로봇의 IP를 확인해주세요.
